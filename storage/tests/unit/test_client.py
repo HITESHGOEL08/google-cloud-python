@@ -86,8 +86,6 @@ class TestClient(unittest.TestCase):
         self.assertIsInstance(client._connection, Connection)
         self.assertIsInstance(
             client._connection.credentials, AnonymousCredentials)
-        self.assertIsNone(client.current_batch)
-        self.assertEqual(list(client._batch_stack), [])
 
     def test__push_batch_and__pop_batch(self):
         from google.cloud.storage.batch import Batch

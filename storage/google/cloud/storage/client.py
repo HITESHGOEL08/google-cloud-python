@@ -64,7 +64,7 @@ class Client(ClientWithProject):
 
     @classmethod
     def create_anonymous_client(cls):
-        """Factory: return client w/ anonymous credentials.
+        """Factory: return client with anonymous credentials.
         
         .. note::
 
