@@ -65,12 +65,12 @@ class Client(ClientWithProject):
     @classmethod
     def create_anonymous_client(cls):
         """Factory: return client with anonymous credentials.
-        
+
         .. note::
 
            Such a client has only limited access to "public" buckets:
            listing their contents and downloading their blobs.
-           
+
         :rtype: :class:`google.cloud.storage.client.Client`
         :returns: Instance w/ anonymous credentials and no project.
         """
